@@ -132,7 +132,7 @@ function Transfer({transfer}) {
           </div>
           {width > 768 && 
             <div className='round-box-time'>
-              {dayjs(transfer.timestamp * 1000).fromNow()}
+              {dayjs(transfer.timestamp * 1000).fromNow()} on {transfer.network}
             </div>}
         </a>
       </div>
