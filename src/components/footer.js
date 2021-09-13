@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import BuiltOnEth from '../assets/images/built-on-eth.png'
+import SupportedOnCelo from '../assets/images/supported-on-celo.png'
 import POAPLogo from '../assets/images/POAP.svg'
 import TwitterLogo from '../assets/images/logo-twitter-grey.svg'
 import TwitterLogoBlue from '../assets/images/logo-twitter-blue.svg'
@@ -45,8 +46,13 @@ export default function () {
           <a href="https://reddit.com/r/poap" target="_blank"  rel="noopener noreferrer"><img onMouseEnter={() => setRedditHover(true)} onMouseLeave={() => setRedditHover(false)} src={redditHover ? RedditLogoBlue : RedditLogo} alt="Reddit" /></a>
         </div>
       </div>
-      <div className="eth-branding">
-        <img src={BuiltOnEth} alt="Built on Ethereum" />
+      <div class="brandings">
+        <span class="eth-branding">
+          <img src={BuiltOnEth} alt="Built on Ethereum" />
+        </span>
+        <span class="celo-branding">
+          <img src={SupportedOnCelo} alt="Supported on Celo" />
+        </span>
       </div>
     </footer>
     </div>
