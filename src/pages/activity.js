@@ -199,7 +199,6 @@ function TokenRow({transfer, dateFormat}) {
 
 function TokenRowDescription({transfer}) {
   const type = transferType(transfer)
-  console.log(transfer)
   return <div className='description'>{
     (type === 'Migration') ? <span>POAP migrated to
       <a href={"https://app.poap.xyz/scan/" + transfer.to.id} target="_blank"  rel="noopener noreferrer"> {transfer.to.id.substring(0, 16) + '…'} </a>
