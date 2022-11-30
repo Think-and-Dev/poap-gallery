@@ -7,7 +7,7 @@
 
 * https://api.poap.xyz/token/16815/image
 
-## Mainnet
+## Ethereum
 
 deploy contact: 0x22C1f6050E56d2876009903609a2cC3fEf83B415
 * https://etherscan.io/token/0x22c1f6050e56d2876009903609a2cc3fef83b415

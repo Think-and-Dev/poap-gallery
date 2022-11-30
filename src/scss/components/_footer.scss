@@ -11,13 +11,16 @@
     margin: 0;
   }
 
-  .eth-branding {
+  .brandings {
     text-align: center;
-    padding: 0;
-    img {
-      width: 150px;
+    span {
+      text-align: center;
+      padding: 0;
+      img {
+          width: 150px;
+      }
     }
-  }
+  } 
 
   h5 {
     margin-bottom: 24px;
@@ -38,7 +41,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'home-link    ecosystem    join-links'
-    'eth-branding eth-branding eth-branding';
+    'brandings    brandings    brandings';
   .ecosystem {
     margin: 20px 0 0 0;
     @media (min-width: $bp-m) {
@@ -155,8 +158,8 @@
       }
     }
   }
-  .eth-branding {
-    grid-area: eth-branding;
+  .brandings {
+    grid-area: brandings;
     background-color: #f7f7f7;
   }
   @media (max-width: $bp-m) {
@@ -165,7 +168,7 @@
     grid-template-areas:
       'ecosystem    join-links'
       'home-link    home-link'
-      'eth-branding eth-branding';
+      'brandings    brandings';
     .ecosystem, .join-links {
       padding: 3%;
       justify-content: center;
@@ -195,7 +198,7 @@
       'ecosystem'
       'join-links'
       'home-link'
-      'eth-branding';
+      'brandings';
   }
 }
 
